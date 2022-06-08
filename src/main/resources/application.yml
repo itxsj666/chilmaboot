@@ -1,0 +1,24 @@
+server:
+  port: 5050
+
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/chilma
+      username: root
+      password: 1234
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+#mybatis plus\u914D\u7F6E
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #\u5F00\u542F\u63A7\u5236\u53F0 SQL \u65E5\u5FD7\u6253\u5370
+    global-config:
+      db-config:
+        update-strategy: not_empty #\u66F4\u65B0\u7B56\u7565
+#logging:
+#   pattern:
+#     console: '%d{yyyy-MM-dd HH:mm:ss} %p %c{1}:%L - %m%n' #\u65E5\u5FD7\u6253\u5370\u683C\u5F0F
+
+
+
